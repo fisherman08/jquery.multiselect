@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../jquery.MultiSelect.css">
+    <script src="../jquery.MultiSelect.js"></script>
+    <title>sample</title>
+</head>
+<body>
+    <div class="container">
+        <table class="table table-bordered table-striped">
+            <tr>
+                <th class="col-xs-3">sample</th>
+                <td>
+                    <select id="select" multiple>
+                        <option value="1">sample 1</option>
+                        <optgroup label="sample">
+                            <option value="2">sample 2</option>
+                            <option value="3">sample 3</option>
+                            <option value="4">sample 4</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <p class="text-center">
+            <button type="button" class="btn btn-default" id="sample">sample</button>
+        </p>
+    </div>
+</body>
+
+<script>
+    $("#select").MultiSelect();
+
+    $("#sample").click(function(e){
+        alert($("option:selected").map(function(){return $(this).val();}).get().join(","));
+    });
+</script>
+</html>
