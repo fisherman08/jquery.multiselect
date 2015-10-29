@@ -1,0 +1,6 @@
+Gemfile.lock
+.DS_store
+.idea
+.bundle
+.ruby-version
+vendor/bundler

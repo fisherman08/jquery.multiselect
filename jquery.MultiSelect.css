@@ -1,0 +1,26 @@
+div.jquery_multi_select_modal_selected_tbl span:not(.cancel) {
+  border: 1.5px solid #a9a9a9;
+  line-height: 1.8em;
+  padding: 0.4em;
+  margin: 10px 5px 0 0;
+  border-radius: 10%; }
+  div.jquery_multi_select_modal_selected_tbl span:not(.cancel) span.cancel {
+    border: 1px solid #8d8d8d;
+    pedding: 3px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 10%;
+    width: 1em;
+    height: 1em; }
+    div.jquery_multi_select_modal_selected_tbl span:not(.cancel) span.cancel:hover {
+      background-color: rgba(255, 0, 0, 0.51); }
+
+div.jquery_multi_select_modal span {
+  border: 1.5px solid #a9a9a9;
+  line-height: 1.8em;
+  padding: 0.4em;
+  margin: 10px 5px 0 0;
+  border-radius: 10%;
+  cursor: pointer; }
+
+/*# sourceMappingURL=jquery.MultiSelect.css.map */
